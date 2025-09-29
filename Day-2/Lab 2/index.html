@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="4px" width="100%">
+      <thead>
+        <th colspan="3" bgcolor="sandybrown">
+          <h2>Website Logo</h2>
+        </th>
+      </thead>
+      <tbody>
+        <!-- NavBar -->
+        <tr>
+          <th colspan="3" bgcolor="wheat">
+            Navbar <br />
+            <a href="#">Home</a> | <a href="#">Contact-Us</a> |
+            <a href="#">About</a>
+          </th>
+        </tr>
+
+        <!-- Login, Information, Image -->
+        <tr>
+          <td align="center" bgcolor="tan">
+            <label for="user">user</label>
+            <input type="text" name="user" id="user" />
+            <br />
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" />
+            <br />
+            <input type="submit" value="Log-in" />
+            <a href="./register.html" target="_blank">Register</a>
+          </td>
+
+          <td rowspan="3" bgcolor="wheat">
+            <font face="Verdana" size="2" color="#0039A3">
+              <p>My Information</p>
+              <ul>
+                <li>25 Years Old</li>
+                <li>EG-Dakahlia-Mansura-Talkha</li>
+                <li>
+                  phone Number:
+                  <ul>
+                    <li>(+20)1148021672</li>
+                    <li>(+20)1033523467</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://www.mans.edu.eg/en/" target="_blank"
+                    >Mansura University</a
+                  >
+                  <a href="https://engfac.mans.edu.eg/en" target="_blank"
+                    >Faculty of Engineering</a
+                  >
+                </li>
+                <li>Graduation Year 2024</li>
+                <li>
+                  Hobbies
+                  <ul>
+                    <li>Reading</li>
+                    <li>Swimming</li>
+                    <li>Travelling</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="mailto:abdelrahman.salem.1002@gmail.com">Mail-Me</a>
+                </li>
+              </ul>
+            </font>
+          </td>
+
+          <td align="center" bgcolor="tan">
+            <img src="./resources/small-image.jpg" alt="IMG" width="150px" />
+          </td>
+        </tr>
+
+        <!-- Online Pages, News -->
+        <tr>
+          <td align="center" bgcolor="sandybrown">
+            <p>My Online Pages</p>
+            <img src="./resources/linkedIn_icon.webp" alt="" width="20px" />
+            <img src="./resources/github_icon.webp" alt="" width="20px" />
+            <img src="./resources/X_icon.png" alt="" width="20px" />
+          </td>
+          <td align="center" rowspan="2" bgcolor="tan">
+            <h3>NEWS</h3>
+          </td>
+        </tr>
+
+        <!-- iFrame -->
+        <tr>
+          <td align="center" bgcolor="tan">
+            <iframe
+              width="220"
+              src="https://www.youtube.com/embed/rfscVS0vtbw?si=AUAtbFQNJE-T7jwK"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <th colspan="3" bgcolor="sandybrown">
+          <a href="#">Top of Page</a>
+          <p color="red">Copyrights &copy; Are Reserved To ITI</p>
+        </th>
+      </tfoot>
+    </table>
+  </body>
+</html>

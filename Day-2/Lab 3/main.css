@@ -1,0 +1,14 @@
+/* 
+Q1
+a. Make the font type "Lucida Calligraphy" for any p or div or span tag (use one CSS rule).
+*/
+div,
+p,
+span {
+  font-family: "Lucida Calligraphy" ;
+}
+
+/* b. <h1> tag which is child from div tag to be in the center of the page. */
+div h1 {
+  text-align: center;
+}

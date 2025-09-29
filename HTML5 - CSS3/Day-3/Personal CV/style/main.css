@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --main-color: dodgerblue;
+}
+
+.container {
+  width: 95vw;
+  height: 95vh;
+  margin: 10px auto;
+  background-color: #eee;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr) 50px;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  grid-column: 1 / span 6;
+  grid-row: 1 / 2;
+}
+
+.header-right h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-right h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header-right p {
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.header .header-left {
+  max-width: 40%;
+  overflow: hidden;
+}
+
+.header .header-left img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #777;
+}
+/* Header */
+/* -------------------------------- */
+/* Aside */
+aside {
+  background-color: white;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+aside h3 {
+  color: #555;
+  margin: 10px 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  background-color: #eee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact .contact-container {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact .contact-container div {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+/* Contact */
+
+/* Language */
+.lang {
+  text-align: center;
+}
+
+.lang p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.lang progress {
+  width: 70%;
+  margin: 5px auto 20px;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  appearance: none;
+}
+
+.lang progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+.lang progress::-webkit-progress-value {
+  background-color: var(--main-color);
+  border-radius: 6px;
+}
+
+.lang progress::-moz-progress-bar {
+  background-color: var(--main-color);
+  border-radius: 6px;
+}
+/* Language */
+
+/* Skills */
+.skills {
+  padding: 10px;
+  background-color: #eee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills-container p {
+  margin-top: 15px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.circle {
+  --value: 50; /* default */
+  --color: var(--main-color);
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(var(--color) calc(var(--value) * 1%), #777 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+}
+
+.circle::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #ddd;
+  border-radius: 50%;
+  position: absolute;
+}
+/* Skills */
+
+/* Online-Informatio */
+.online-info div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  padding: 10px 10px 20px;
+}
+/* Online-Informatio */
+/* Aside */
+/* -------------------------------- */
+/* Content */
+
+.content {
+  background-color: whitesmoke;
+  grid-column: 3 / span 3;
+  grid-row: 2 / span 3;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.content h3 {
+  width: 85%;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 32px;
+
+  color: white;
+  background-color: var(--main-color);
+}
+
+.content .content-container {
+  width: 90%;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 10px auto;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #eee;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Content */
+/* -------------------------------- */
+/* Footer */
+
+.footer {
+  height: 100%;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--main-color);
+  color: white;
+
+  grid-column: 1 / span 5;
+  grid-row: 5 / span 1;
+}
+
+/* Footer */
+/* -------------------------------- */

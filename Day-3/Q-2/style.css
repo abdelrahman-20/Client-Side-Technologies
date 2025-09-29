@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  padding: 20px 10px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+img {
+  width: 70%;
+}
+
+.text {
+  width: 20%;
+  padding: 20px;
+  background-color: rgba(218, 100, 80, 0.6);
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}

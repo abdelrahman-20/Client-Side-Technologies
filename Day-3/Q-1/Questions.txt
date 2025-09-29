@@ -1,0 +1,12 @@
+1- Use display: inline-block for the list items (Why?)
+The Display of List-Items is inline-block =>To View List Items Side By Side In One Line
+
+2- What’s the difference between the following display values: inline, block, inline-block?
+inline: Takes Only The Width of Contenct, Doesn't Respond To Width & Height
+block: Takes The Width of The Whole Line And Responds To Width & Height
+inline: Takes Only The Width of Contenct, But Responds To Width & Height
+
+3- What’s the difference between the Sticky & Fixed Position?
+Sticky: Sticks in its parent container, When the parent is out of view, the sticky element scrolls up to fixed location.
+Fixed: Always stays at the same spot in the viewport, no matter what parent element it’s in.
+

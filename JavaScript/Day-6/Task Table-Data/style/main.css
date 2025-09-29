@@ -1,0 +1,103 @@
+:root {
+  --main-color: steelblue;
+  --ink-color: rgb(20, 20, 59);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ----------------------------------------------- */
+/* Form */
+
+.form-title {
+  width: 50vw;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+}
+
+form {
+  width: 50vw;
+  padding: 20px;
+  margin: 10px auto 30px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+form label {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--ink-color);
+}
+
+form input {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+form button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 20px auto 10px;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--ink-color);
+  box-shadow: 0px 2px 30px black;
+}
+
+/* Form */
+/* ----------------------------------------------- */
+/* Table */
+
+table {
+  width: 95vw;
+  /* height: 95vh; */
+  margin: 20px auto;
+  border: 3px solid var(--main-color);
+}
+
+table thead {
+  background-color: var(--main-color);
+}
+
+table th,
+table button {
+  padding: 20px;
+  font-size: 24px;
+  color: white;
+  background-color: var(--main-color);
+  border: none;
+}
+
+table td {
+  color: var(--main-color);
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+/* ----------------------------------------------- */
